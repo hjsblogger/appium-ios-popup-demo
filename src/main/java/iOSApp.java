@@ -38,22 +38,7 @@ public class iOSApp {
     @Parameters({"device", "version", "platform"})
     public void setUp(String device, String version, String platform) throws MalformedURLException
     {
-        /* Appium 1.x*/
-        /*
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("build", "Java TestNG");
-        capabilities.setCapability("name", "iOS" + " " + "iPhone 13" + " " + "15");
-        capabilities.setCapability("deviceName", "iPhone 13");
-        capabilities.setCapability("platformVersion", "15");
-        capabilities.setCapability("platformName", "iOS");
-        capabilities.setCapability("isRealMobile", true);
-        capabilities.setCapability("network", false);
-        capabilities.setCapability("visual", true);
-        capabilities.setCapability("devicelog", true);
-        capabilities.setCapability("browserName", "Safari");
-        */
 
-        /* Appium 2.x */
         DesiredCapabilities capabilities = new DesiredCapabilities();
         HashMap<String, Object> ltOptions = new HashMap<String, Object>();
         ltOptions.put("build", "[Build] Pop-Up Handling in iOS Web App");
